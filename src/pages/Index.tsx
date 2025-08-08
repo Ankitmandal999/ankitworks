@@ -17,41 +17,49 @@ const projects = [
     title: "Library Management System",
     summary: "SQL database with ERD; improved efficiency by 30%",
     tags: ["SQL", "ERD"],
+    href: "https://github.com/search?q=Library%20Management%20System%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Customer Segmentation Dashboard",
     summary: "RFM analysis in Power BI; 15% churn reduction",
     tags: ["Power BI", "RFM"],
+    href: "https://github.com/search?q=Customer%20Segmentation%20Dashboard%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Bank Loan Analysis",
     summary: "Visual report of key loan metrics for trend analysis",
     tags: ["Power BI", "Finance"],
+    href: "https://github.com/search?q=Bank%20Loan%20Analysis%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Covid-19 Data Exploration",
     summary: "SQL queries to track pandemic trends",
     tags: ["SQL", "Exploration"],
+    href: "https://github.com/search?q=Covid-19%20Data%20Exploration%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Sales Performance Analysis",
     summary: "Power BI dashboards for sales KPIs",
     tags: ["Power BI", "Sales"],
+    href: "https://github.com/search?q=Sales%20Performance%20Analysis%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Uber Trip Analysis",
     summary: "Booking and revenue analytics in Power BI",
     tags: ["Power BI", "Analytics"],
+    href: "https://github.com/search?q=Uber%20Trip%20Analysis%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Disney+ Data Exploration",
     summary: "Advanced SQL querying for content insights",
     tags: ["SQL", "Content"],
+    href: "https://github.com/search?q=Disney%2B%20Data%20Exploration%20user%3AAnkitmandal999&type=repositories",
   },
   {
     title: "Movie Dataset Correlation Analysis",
     summary: "Python project with visual correlations",
     tags: ["Python", "EDA"],
+    href: "https://github.com/search?q=Movie%20Dataset%20Correlation%20Analysis%20user%3AAnkitmandal999&type=repositories",
   },
 ];
 
@@ -126,7 +134,7 @@ export default function Index() {
         <SectionHeading kicker="Projects" title="Selected Work" />
         <div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
-            <ProjectCard key={p.title} title={p.title} summary={p.summary} tags={p.tags} />
+            <ProjectCard key={p.title} title={p.title} summary={p.summary} tags={p.tags} href={p.href} />
           ))}
         </div>
       </section>

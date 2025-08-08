@@ -41,6 +41,9 @@ export default function Navbar() {
           <a href="#projects" className="hidden sm:block">
             <Button size="sm" variant="secondary">View My Work</Button>
           </a>
+          <a href="/ankit-mandal-resume.pdf" download className="hidden sm:block">
+            <Button size="sm" variant="outline">Download Resume</Button>
+          </a>
           <a href="#contact">
             <Button size="sm" variant="hero">Let's Connect</Button>
           </a>

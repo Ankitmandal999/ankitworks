@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import profileImg from "@/assets/ankit-profile-placeholder.jpg";
+import profileImg from "@/assets/ankit-profile.png";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,6 +45,9 @@ export default function Hero() {
             <div className="flex items-center gap-3">
               <a href="#projects"><Button variant="hero" size="lg">View My Work</Button></a>
               <a href="#contact"><Button variant="outline" size="lg">Let's Connect</Button></a>
+              <a href="/ankit-mandal-resume.pdf" download>
+                <Button variant="secondary" size="lg">Download Resume</Button>
+              </a>
             </div>
           </div>
           <div className="flex md:justify-end">
